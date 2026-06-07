@@ -21,22 +21,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 0;
 }
 
 .hero::before {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background-image: url("/images/c14.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(2px);
     transform: scale(1.08);
-
-    z-index: -2;
+    z-index: -1;
 }
 
 .hero::after {
